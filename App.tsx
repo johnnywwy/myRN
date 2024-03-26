@@ -16,7 +16,6 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import Config from 'react-native-config';
 
 import {
   Colors,
@@ -77,12 +76,11 @@ function App(): React.JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="env环境地址">
-            <Text style={styles.highlight}>{Config.API_URL}</Text>
-            {/* to */}
-            {/* change this screen and then come back to see your edits. */}
+          <Section title="Step One">
+            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
+            screen and then come back to see your edits.
           </Section>
-          {/* <Section title="See Your Changes">
+          <Section title="See Your Changes">
             <ReloadInstructions />
           </Section>
           <Section title="Debug">
@@ -90,8 +88,8 @@ function App(): React.JSX.Element {
           </Section>
           <Section title="Learn More">
             Read the docs to discover what to do next:
-          </Section> */}
-          {/* <LearnMoreLinks /> */}
+          </Section>
+          <LearnMoreLinks />
         </View>
       </ScrollView>
     </SafeAreaView>
