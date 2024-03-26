@@ -5,7 +5,7 @@ class App extends React.Component {
   render() {
     return (
       <View>
-        <Text>React App</Text>
+        <Text>React App123456</Text>
       </View>
     );
   }
